@@ -1,13 +1,15 @@
+from decimal import *
+import sys
+getcontext().prec=35
 t=int(input())
 for _ in range(t):
 	lista=[]	
 	num=str(input())
-	maxp=num.index('.')
-	print(maxp)
-	while(num!='0'):
+	while num.strip()!="0":		
 		lista.append(Decimal(num))
-		num=input()
-	ans=0.0
-	for a in lista:
-		ans=ans+a
-	print(ans)
+		num=str(input())
+	ans=sum(lista)
+	ans=format(ans,".33f")	
+	resto=Decimal(str(Decimal(ans)-int(Decimal(ans))))	
+	if(resto==Decimal('0.0')):print(int(Decimal(ans)))
+	else:print(str(ans).rstrip('0'))
