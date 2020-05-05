@@ -1,2 +1,2 @@
 # Programación Competitiva
-Soluciones a problemas de distintos Jueves Online (UVa, CodeForeces, SPOJ,  etc...)
+Soluciones a problemas de distintos Jueces Online (UVa, CodeForeces, SPOJ,  etc...)
